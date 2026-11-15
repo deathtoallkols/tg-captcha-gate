@@ -17,7 +17,7 @@ from telegram.ext import (
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 DESTINATION_BOT = os.getenv("DESTINATION_BOT", "https://t.me/StakeRewardsDropBot")
-DESTINATION_NAME = os.getenv("DESTINATION_NAME", "BOTNAME")
+DESTINATION_NAME = os.getenv("DESTINATION_NAME", "StakeRewardsDropBot")
 
 MAX_ATTEMPTS = 3
 CHALLENGE_TIMEOUT = 120  # seconds
