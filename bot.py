@@ -16,7 +16,7 @@ from telegram.ext import (
 # ==============================
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-DESTINATION_BOT = os.getenv("DESTINATION_BOT", "https://t.me/BOTNAME")
+DESTINATION_BOT = os.getenv("DESTINATION_BOT", "https://t.me/StakeRewardsDropBot")
 DESTINATION_NAME = os.getenv("DESTINATION_NAME", "BOTNAME")
 
 MAX_ATTEMPTS = 3
@@ -129,7 +129,7 @@ async def verify_answer(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if selected == correct:
         context.user_data.clear()
         keyboard = InlineKeyboardMarkup(
-            [[InlineKeyboardButton(f"🚀 Continue to {DESTINATION_NAME}", url=DESTINATION_BOT)]]
+            [[InlineKeyboardButton(f"🚀 Continue to {StakeRewardsDropBot}", url=https://t.me/StakeRewardsDropBot)]]
         )
         await query.edit_message_text(
             "✅ <b>Verification Successful!</b>\n\n"
