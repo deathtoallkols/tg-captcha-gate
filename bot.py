@@ -129,7 +129,7 @@ async def verify_answer(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if selected == correct:
         context.user_data.clear()
         keyboard = InlineKeyboardMarkup(
-            [[InlineKeyboardButton(f"🚀 Continue to {StakeRewardsDropBot}", url=https://t.me/StakeRewardsDropBot)]]
+            [[InlineKeyboardButton(f"🚀 Continue to {DESTINATION_NAME}", url=DESTINATION_BOT)]]
         )
         await query.edit_message_text(
             "✅ <b>Verification Successful!</b>\n\n"
